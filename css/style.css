@@ -762,8 +762,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 20px 20px 0;
 }
 #page-skills {
-    padding: 75px 0;
-    background: #121212;
+  padding: 75px 0;
+    background: #f7f7f7;
     text-align: center;
 }
 #page-education {
@@ -776,10 +776,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 #page-portfolio {
     padding: 75px 0;
-    background: #fff;
+    background: #121212;
+}
+#page-portfolio .section-title{
+	color:#fff;
 }
 #page-contact {
-    padding: 75px 0;
+    padding: 55px 0;
 }
 #page-contact .contact-info p {
     font-size: 1.2em;
@@ -946,8 +949,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Dividers
    ========================================================================== */
-
-.section-header {
+   .section-header {
     text-align: center;
 }
 .section-header p {
@@ -958,15 +960,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: 5px;
     text-align: center;
-    color: #fff;
+    color: #555555;
     text-transform: uppercase;
     padding: 20px 0;
 }
-
-.section-h3 {
-  color: #fff;
-  }
-
 .spacer {
     width: 100px;
     height: 2px;
@@ -1240,16 +1237,16 @@ background: #3498db;
 }
 
 #page-contact{
-	background: #3498db;
-	color:#fff;
+	background: #f7f7f7;
+	color:rgb(29, 26, 26);
 }
 
 #page-contact .spacer{
-	background: #fff;
+	background: #3498db;
 }
 
 #page-contact .section-title{
-	color:#fff;
+	color:rgb(29, 26, 26);
 }
 
 .btn.btn-default:hover,
@@ -1266,3 +1263,91 @@ background: #3498db;
 {
     color: #267F00;
 }    
+
+.awesome-img img {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+
+.single-awesome-project {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.single-awesome-project:hover .awesome-img img {
+  transform: scale(1);
+  transition: 0.4s;
+}
+.awesome-img > a {
+  display: block;
+  position: relative;
+}
+.single-awesome-project:hover .awesome-img > a::after {
+  opacity: 1;
+}
+.single-awesome-project:hover .add-actions {
+  opacity: 1;
+}
+.awesome-img > a::after {
+  background: rgba(177, 173, 166, 0.26) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.project-dec {
+  text-align: center;
+  display: block;
+  margin-top: 4px;
+  padding: 12px;
+  position: relative;
+  }
+.project-dec::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  top: 20px;
+  width: 6px;
+  height: 15px;
+  background: #ff9c00;
+  transition: 0.5s;
+}
+.single-awesome-project:hover .project-dec::before {
+  width: 6px;
+  height: 80%;
+  transition: 0.5s;
+}
+.project-dec h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.project-dec a {
+  color: #444;
+}
+.project-dec a:hover {
+  color: #333;
+}
+.project-dec p {
+  color: #fff;
+  font-weight: 400;
+}
+.pst-content {
+  padding-left: 10px;
+}
+.single-awesome-project:hover .project-dec h4 {
+  color: #ff9c00;
+}

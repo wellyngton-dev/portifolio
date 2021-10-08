@@ -5,11 +5,20 @@ siteApp.config(['$translateProvider', function ($translateProvider) {
         TITLE: 'Wellyngton Carvalho | WEB Developer',
         OCCUPATION: 'WEB Developer',
         LANG: 'Português',
+        SKILLS: 'Skills',
+        PORTFOLIO: 'Website Portfolio',
+        ADRESS: '<i class="fa fa-map-marker fa-margin"></i>São Carlos - SP, Brasil',
+        CONTACT: 'Contact',
+        
     });
     $translateProvider.translations('pt-BR', {
         TITLE: 'Wellyngton Carvalho | Desenvolvedor WEB',
         OCCUPATION: 'Desenvolvedor WEB',
         LANG: 'English',
+        SKILLS: 'Conhecimentos',
+        PORTFOLIO: 'Portfólio de Sites',
+        ADRESS: '<i class="fa fa-map-marker fa-margin"></i>São Carlos - SP, Brasil',
+        CONTACT: 'Contato',
     });
     $translateProvider.preferredLanguage('pt-BR');
     $translateProvider.useSanitizeValueStrategy('sanitize');
